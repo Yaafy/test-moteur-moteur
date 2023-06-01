@@ -1,0 +1,11 @@
+basic.showIcon(IconNames.Surprised)
+basic.forever(function () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 127)
+    basic.pause(2000)
+    motor.motorStopAll()
+    basic.pause(500)
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CCW, 127)
+    basic.pause(2000)
+    motor.motorStopAll()
+    basic.pause(500)
+})
